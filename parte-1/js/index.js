@@ -8,14 +8,14 @@ class Libro {
         (`Libro {autor: "${this.autor}", titulo: "${this.titulo}"}`)
     }
     // Ejercicio 3:
-    // let desc3y4 = (`${this.titulo}, de ${this.autor.toUpperCase()}`)
+    // this.oracion = `${this.titulo}, de ${this.autor.toUpperCase()}`
     mostrarDatosEnConsola() {
-        // console.log(desc3y4)
+        // console.log(this.oracion)
         console.log(`${this.titulo}, de ${this.autor.toUpperCase()}`)
     }
     // Ejercicio 4:
     mostrarDatosEnAlert() {
-        // alert(desc3y4)
+        // alert(this.oracion)
         alert(`${this.titulo}, de ${this.autor.toUpperCase()}`)
     }
 }
@@ -27,6 +27,6 @@ unLibro.mostrarDatosEnAlert()
 
 console.log(unLibro)
 
-
+// Ejercicio 5:
 
 
