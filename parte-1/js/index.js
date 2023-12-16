@@ -42,18 +42,20 @@ alert(tituloDelNuevoLibro);
 let tituloDelNuevoLibro1 = nuevolibro.mostrarDatos();
 
 function mostrarDatos(modo) {
-    if (modo === 'alert') {
+if (modo === 'alert') {
+        // return this.mostrarDatosEnAlert;
         alert(tituloDelNuevoLibro1);  
     } else if (modo === 'console'){
+        // return this.mostrarDatosEnConsola;
         return console.log(tituloDelNuevoLibro1);
     }  
     else 
+    // return this.mostrarDatosEnConsola;
     return console.log(tituloDelNuevoLibro1);
 }
 mostrarDatos('alert');
 // mostrarDatos('console');
 // mostrarDatos();
-
 
 
 unLibro.descripcion();
