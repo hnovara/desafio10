@@ -24,7 +24,7 @@ class Libro {
     }
     // Ejercicio 6:
     mostrarDatos() {
-        return (this.oracion);
+        return this.oracion;
     }
 
 
@@ -65,5 +65,3 @@ unLibro.getTitulo();
 unLibro.mostrarDatos();
 
 console.log(unLibro);
-
-
