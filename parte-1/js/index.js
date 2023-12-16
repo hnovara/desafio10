@@ -5,28 +5,63 @@ class Libro {
         this.titulo = titulo;
     }
     descripcion() {
-        (`Libro {autor: "${this.autor}", titulo: "${this.titulo}"}`)
+        return `Libro {autor: "${this.autor}", titulo: "${this.titulo}"}`;
     }
     // Ejercicio 3:
-    // this.oracion = `${this.titulo}, de ${this.autor.toUpperCase()}`
+    get oracion() {
+        return `${this.titulo}, de ${this.autor.toUpperCase()}`;
+    }
     mostrarDatosEnConsola() {
-        // console.log(this.oracion)
-        console.log(`${this.titulo}, de ${this.autor.toUpperCase()}`)
+        console.log(this.oracion)
     }
     // Ejercicio 4:
     mostrarDatosEnAlert() {
-        // alert(this.oracion)
-        alert(`${this.titulo}, de ${this.autor.toUpperCase()}`)
+        alert(this.oracion)
     }
+    // Ejercicio 5:
+    getTitulo() {
+        return this.titulo;
+    }
+    // Ejercicio 6:
+    mostrarDatos() {
+        return (this.oracion);
+    }
+
+
 }
-let unLibro = new Libro('Ángeles y Demonios', 'Dan Brown')
-
-unLibro.descripcion()
-unLibro.mostrarDatosEnConsola() 
-unLibro.mostrarDatosEnAlert()
-
-console.log(unLibro)
+// Ejercicio 2:
+let unLibro = new Libro('Ángeles y Demonios', 'Dan Brown');
 
 // Ejercicio 5:
+let nuevolibro = new Libro('Fuego y Sangre', 'George R. R. Martin');
+
+let tituloDelNuevoLibro = nuevolibro.getTitulo();
+alert(tituloDelNuevoLibro);
+
+// Ejercicio 6:
+let tituloDelNuevoLibro1 = nuevolibro.mostrarDatos();
+
+function mostrarDatos(modo) {
+    if (modo === 'alert') {
+        alert(tituloDelNuevoLibro1);  
+    } else if (modo === 'console'){
+        return console.log(tituloDelNuevoLibro1);
+    }  
+    else 
+    return console.log(tituloDelNuevoLibro1);
+}
+mostrarDatos('alert');
+// mostrarDatos('console');
+// mostrarDatos();
+
+
+
+unLibro.descripcion();
+unLibro.mostrarDatosEnConsola();
+unLibro.mostrarDatosEnAlert();
+unLibro.getTitulo();
+unLibro.mostrarDatos();
+
+console.log(unLibro);
 
 
