@@ -55,7 +55,7 @@ if (modo === 'alert') {
 }
 mostrarDatos('alert');
 // mostrarDatos('console');
-// mostrarDatos();
+// mostrarDatos() ;
 
 
 unLibro.descripcion();
