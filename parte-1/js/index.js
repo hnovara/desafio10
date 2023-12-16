@@ -4,9 +4,7 @@ class Libro {
         this.autor = autor;
         this.titulo = titulo;
     }
-    descripcion() {
-        return `Libro {autor: "${this.autor}", titulo: "${this.titulo}"}`;
-    }
+    
     // Ejercicio 3:
     get oracion() {
         return `${this.titulo}, de ${this.autor.toUpperCase()}`;
@@ -26,9 +24,8 @@ class Libro {
     mostrarDatos() {
         return this.oracion;
     }
-
-
 }
+
 // Ejercicio 2:
 let unLibro = new Libro('Ángeles y Demonios', 'Dan Brown');
 
@@ -51,14 +48,12 @@ if (modo === 'alert') {
     }  
     else 
     // return this.mostrarDatosEnConsola;
-    return console.log(tituloDelNuevoLibro1);
+return console.log(tituloDelNuevoLibro1);
 }
 mostrarDatos('alert');
 // mostrarDatos('console');
 // mostrarDatos() ;
 
-
-unLibro.descripcion();
 unLibro.mostrarDatosEnConsola();
 unLibro.mostrarDatosEnAlert();
 unLibro.getTitulo();

@@ -39,3 +39,28 @@ Español
 Maru cocina junto a sus hijos y amigos sus mejores recetas del día a día. Este manual con recetario ayudará a los jóvenes, a los recién mudados y a todo aquel que se inicia en la cocina a preparar los platos más deliciosos: bebidas, entradas, principales, panes, postres y tortas. Todo con los eximios sabores y la simplicidad de Maru Botana.
 
 */
+
+// Ejercicio 2:
+class Libro {
+    constructor (titulo, autor, precio, isbn, paginas, idioma, foto, sinopsis) {
+        this.titulo = titulo;
+        this.autor = autor;
+        this.precio = precio;
+        this.isbn = isbn;
+        this.paginas = paginas;
+        this.idioma = idioma;
+        this.foto = foto;
+        this.sinopsis = sinopsis;
+    }
+}
+let libro1 = new Libro(
+    'Carrie',
+    'Stephen King',
+    '$2.399',
+    '9789871138999',
+    '256',
+    'Español',
+    'foto.jpg',
+    'El legendario debut de Stephen King, sobre una marginada adolescente y la venganza que ejerce sobre sus compañeros de clase.'
+  )
+  console.log(libro1);
