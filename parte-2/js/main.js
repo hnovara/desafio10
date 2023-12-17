@@ -113,6 +113,7 @@ let libro5 = new Libro(
 const elemLibrosContainer = document.getElementById("libros");
 // elemLibrosContainer.innerHTML += libro1.getHtmlArticle();
 
+console.log(elemLibrosContainer[0])
 
 // Ejercicio 13:
 let htmlNuevosLibros = 
@@ -122,8 +123,12 @@ let htmlNuevosLibros =
 + libro4.getHtmlArticle()
 + libro5.getHtmlArticle();
 
-elemLibrosContainer.innerHTML += htmlNuevosLibros
+// elemLibrosContainer.innerHTML += htmlNuevosLibros
 
 
 // Ejercicio 14:
-// elemLibrosContainer.innerHTML = htmlNuevosLibros
+const elementos = document.getElementById("libros").children;
+[ a, b, c ] = elementos;
+
+elemLibrosContainer.innerHTML = a.innerHTML + htmlNuevosLibros
+
