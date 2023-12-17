@@ -40,7 +40,7 @@ Maru cocina junto a sus hijos y amigos sus mejores recetas del día a día. Este
 
 */
 
-// Ejercicio 2:
+// Ejercicio 7, 8 y 9:
 class Libro {
     constructor (titulo, autor, precio, isbn, paginas, idioma, foto, sinopsis) {
         this.titulo = titulo;
@@ -52,7 +52,16 @@ class Libro {
         this.foto = foto;
         this.sinopsis = sinopsis;
     }
+    // Ejercicio 10:
+    // getHtmlArticle() {
+  
+    // }
 }
+// libro1.getHtmlArticle();
+
+
+
+// Ejercicio 9:
 let libro1 = new Libro(
     'Carrie',
     'Stephen King',
@@ -62,5 +71,13 @@ let libro1 = new Libro(
     'Español',
     'foto.jpg',
     'El legendario debut de Stephen King, sobre una marginada adolescente y la venganza que ejerce sobre sus compañeros de clase.'
-  )
-  console.log(libro1);
+    )
+console.log(libro1);
+    
+    
+let readArticle = document.getElementById('libros').children;
+console.log(readArticle[1].innerHTML);
+console.log(readArticle[2].innerHTML);
+
+  // Ejercicio 10:
+// .innerHTML
