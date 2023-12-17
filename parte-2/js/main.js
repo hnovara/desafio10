@@ -54,6 +54,7 @@ class Libro {
     }
     // Ejercicio 10:
     // getHtmlArticle() {
+        // return
   
     // }
 }
@@ -74,10 +75,11 @@ let libro1 = new Libro(
     )
 console.log(libro1);
     
-    
-let readArticle = document.getElementById('libros').children;
-console.log(readArticle[1].innerHTML);
-console.log(readArticle[2].innerHTML);
 
-  // Ejercicio 10:
-// .innerHTML
+// Ejercicio 10:
+let readArticle = document.getElementById('libros').children;
+let [ a, b, c ] = readArticle;
+console.log(b.innerHTML);
+console.log(c.innerHTML);
+
+
