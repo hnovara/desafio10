@@ -126,3 +126,4 @@ elemLibrosContainer.innerHTML += htmlNuevosLibros
 
 
 // Ejercicio 14:
+// elemLibrosContainer.innerHTML = htmlNuevosLibros
