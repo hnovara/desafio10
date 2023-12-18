@@ -132,3 +132,22 @@ elemLibrosContainer.innerHTML = a.innerHTML + htmlNuevosLibros;
 
 
 
+
+
+
+// ## DESAFÍO ##
+
+// Parte 3:
+// Ejercicio 16:
+// Con todo lo anterior, lograr que el siguiente código funcione:
+let id_destino = 'libros';
+// ... código ...
+let libros = [libro1, libro2, libro3, libro4];
+let libreria = new Libreria(libros);
+libreria.cargarElementoConLibros(id_destino);
+
+
+// Ejercicio 17:
+// Si eso funciona, se puede acortar a:
+// ... código ...
+(new Libreria([libro1, libro2, libro3, libro4])).cargarElementoConLibros('libros');
