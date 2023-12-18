@@ -132,8 +132,6 @@ let libro5 = new Libro(
 
 
 
-
-
 // ## DESAFÍO ##
 
 // Parte 3:
