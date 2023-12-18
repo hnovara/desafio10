@@ -110,25 +110,24 @@ let libro5 = new Libro(
 
 
 // Ejercicio 11:
-const elemLibrosContainer = document.getElementById("libros");
-// elemLibrosContainer.innerHTML += libro1.getHtmlArticle();
+// const elemLibrosContainer = document.getElementById("libros");
 
 
 // Ejercicio 13:
-let htmlNuevosLibros = 
-  libro1.getHtmlArticle()
-+ libro2.getHtmlArticle()
-+ libro3.getHtmlArticle()
-+ libro4.getHtmlArticle()
-+ libro5.getHtmlArticle();
+// let htmlNuevosLibros = 
+//   libro1.getHtmlArticle()
+// + libro2.getHtmlArticle()
+// + libro3.getHtmlArticle()
+// + libro4.getHtmlArticle()
+// + libro5.getHtmlArticle();
+
+// Ejercicio 14:
 // elemLibrosContainer.innerHTML += htmlNuevosLibros;
 
 
-// Ejercicio 14:
-const elementos = document.getElementById("libros").children;
-[ a, b, c ] = elementos;
-
-elemLibrosContainer.innerHTML = a.innerHTML + htmlNuevosLibros;
+// const elementos = document.getElementById("libros").children;
+// [ a, b, c ] = elementos;
+// elemLibrosContainer.innerHTML = a.innerHTML + htmlNuevosLibros;
 
 
 
@@ -138,16 +137,31 @@ elemLibrosContainer.innerHTML = a.innerHTML + htmlNuevosLibros;
 // ## DESAFÍO ##
 
 // Parte 3:
+
 // Ejercicio 16:
-// Con todo lo anterior, lograr que el siguiente código funcione:
 let id_destino = 'libros';
-// ... código ...
-let libros = [libro1, libro2, libro3, libro4];
-let libreria = new Libreria(libros);
-libreria.cargarElementoConLibros(id_destino);
+
+
+const elemLibrosContainer1 = document.getElementById(id_destino);
+class Libreria {
+    constructor(libros) {
+        this.libros = libros;
+    }
+    cargarElementoConLibros() {
+        let htmlNuevosLibros = "";
+        for (let index = 0; index < this.libros.length; index++) {
+            htmlNuevosLibros += this.libros[index].getHtmlArticle();
+        }
+        elemLibrosContainer1.innerHTML += htmlNuevosLibros;
+    }
+}
+
+
+// let libros = [libro1, libro2, libro3, libro4, libro5];
+// let libreria = new Libreria(libros);
+// libreria.cargarElementoConLibros(id_destino);
 
 
 // Ejercicio 17:
-// Si eso funciona, se puede acortar a:
-// ... código ...
-(new Libreria([libro1, libro2, libro3, libro4])).cargarElementoConLibros('libros');
+(new Libreria([libro1, libro2, libro3, libro4, libro5])).cargarElementoConLibros('libros');
+
